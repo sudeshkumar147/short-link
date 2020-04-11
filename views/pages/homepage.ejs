@@ -1,49 +1,91 @@
 <div id="homepage" :class="[heroHeightSet ? '' : 'uninitialized']" v-cloak>
   <div class="hero d-flex flex-column justify-content-center" full-page-hero>
-    <div class="container text-center">
-      <div class="hero-image">
-        <img class="sky" alt="The sky above the ocean" src="/images/hero-sky.png"/>
-        <img class="cloud cloud-1" alt="A grayish-blue cloud" src="/images/hero-cloud.png"/>
-        <img class="cloud cloud-2" alt="Another grayish-blue cloud" src="/images/hero-cloud.png"/>
-        <img class="ship" alt="A ship hovering a few feet over the surface of the water, bearing a flagpole with the Sails.js logo" src="/images/hero-ship.png"/>
-        <img class="water" alt="The shadow of the floating ship on the water" src="/images/hero-water.png"/>
-      </div>
-      <h1 class="display-4">A new <strong>Sails</strong> app.</h1>
-      <div>
-        <div class="more-info-text" @click="clickHeroButton()">
-          <div class="text">Dive in</div>
-          <div class="icon">&darr;</div>
+    <div class="container">
+      
+      <!-- Masthead -->
+  <header class="masthead">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8 col-md-8">
+          <h1 class="mb-5">Premium URL Shortener</h1>
+          <p>The best URL that you will ever find on the internet. It comes packed with tons of awesome features including a SaaS version that allows you to run your own business!</p>
         </div>
+        <div class="col-md-8 col-lg-8 col-xl-8">
+          <form>
+            <div class="form-row url-form">
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <input type="email" class="form-control form-control-lg" placeholder="Paste a long url">
+              </div>
+              <div class="col-12 col-md-3">
+                <button type="submit" class="btn btn-block btn-lg btn-primary">Shorten</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+       <div class="col-xl-8 col-md-8">
+            <div class="mt-2 url-form ">
+             <div class="form-row">
+              <div class="col-12 col-md-8 mb-md-0">
+              <p>https://mybase.in/dashboard/form/create-form</p>
+              </div>
+              <div class="col-12 col-md-4 mb-md-0 ">
+              <p><a href="https://bit.ly/39e8gEd">https://bit.ly/39e8gEd</a> </p>
+              </div>
+              <div class="col-md-12"> <hr></div>
+               <div class="col-12 col-md-8">
+              <div class="social-bar">
+                <div class="social-icons mb-3 iconpad text-center">
+                    <a href="" target="_blank" class="slider-nav-item"><i class="fa fa-facebook"></i></a>
+                    <a href="" target="_blank" class="slider-nav-item"><i class="fa fa-twitter"></i></a>
+                    <a href="" target="_blank" class="slider-nav-item"><i class="fa fa-instagram"></i></a>
+                    <a href="" target="_blank" class="slider-nav-item"><i class="fa fa-linkedin"></i></a>
+                    <a href="" target="_blank" class="slider-nav-item"><i class="fa fa-pinterest"></i></a>
+                </div>
+            </div>
+
+
+               </div>
+              <div class="col-12 col-md-4">
+              <a class="btn btn-outline-info btn-block " href="/faq">Link Copy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
+    </div>
+  </header>
+     
     </div>
   </div>
   <div class="about-wrapper" role="scroll-destination">
     <div class="container">
       <div class="about text-center">
-        <h3>This is your freshly-generated project + a few extras.</h3>
-        <p>In our time <a target="_blank" href="https://sailsjs.com/about">building apps for customers</a>, we've found ourselves re-rolling some of the same key features over and over again between projects.  So we picked some of the things that kept popping up, implemented our own opinionated solutions for them, and then included it all in this free and open-source starter app.  We hope it helps you as much as it helps us!</p>
+        <h3>One short link, infinite possibilities.</h3>
+        <p class="mt-3">In our time <a target="_blank" href="https://sailsjs.com/about">building apps for customers</a>, A short link is a powerful marketing tool when you use it carefully. It is not just a link but a medium between your customer and their destination. A short link allows you to collect so much data about your customers and their behaviors.</p>
       </div>
       <div class="features text-center">
         <div class="row">
           <div class="feature mb-4 mb-sm-0 col-sm">
-            <div class="icon">
-              <i class="fa fa-envelope"></i>
-            </div>
-            <h4>Emails</h4>
+            <img class="img-fluid" alt="computer with credit card icon on screen" src="/images/Homepage-Branded-1.png"/>
+            <h4>Inspire trust</h4>
             <p class="text-muted">Built-in support for internal emails from the <a href="/contact">contact form</a>, as well as transactional emails for users.</p>
           </div>
           <div class="feature pt-4 pt-sm-0 mb-4 mb-sm-0 col-sm">
-            <div class="icon">
-              <i class="fa fa-lock"></i>
-            </div>
-            <h4>Authentication</h4>
+           <img class="img-fluid" alt="computer with credit card icon on screen" src="/images/Homepage-Branded-2.png"/>
+            <h4>Boost results</h4>
             <p class="text-muted">Ready-to-go, customizable <a href="/signup">sign up</a>, <a href="/login">login</a>, and <a href="/password/forgot">password recovery</a> flows for your users.</p>
           </div>
           <div class="feature pt-4 pt-sm-0 col-sm">
-            <div class="icon">
-              <i class="fa fa-credit-card"></i>
-            </div>
-            <h4>Billing</h4>
+            
+             <img class="img-fluid" alt="computer with credit card icon on screen" src="/images/Homepage-Branded-3.png"/>
+           
+            <h4>Gain control</h4>
             <p class="text-muted">Hook up to your Stripe account for managing customers and payment sources.</p>
           </div>
         </div>
@@ -51,60 +93,114 @@
       </div>
     </div>
   </div>
-  <div class="container">
+
+  <section class="light">
     <div class="setup">
-      <h3 class="text-center">How to get started:</h3>
-      <div class="step">
-        <div class="step-image">
-        <img alt="computer with email symbol on screen" src="/images/setup-email.png"/>
-        </div>
-        <h5>Set up your branding and content</h5>
-        <p>This starter app includes several different page templates (including the one you're reading right now) that you can change as much or as little as you like.  If there are any pages you won't need, just remove them.</p>
-        <p>To get started, do a global find/replace in this project for occurrences of <code>NEW_APP_NAME</code> and replace them all with the actual name of your app or platform ("Facebag").  Then do the same thing again to replace <code>NEW_APP_COMPANY_NAME</code> with the actual name of your organization ("Facebag Corporation").</p>
-        <blockquote><small>This app also includes a default <a href="/legal/terms">Terms of Use</a> and <a href="/legal/privacy">Privacy Policy</a>.  We want to make it easier for apps to be transparent about their users' rights and privacy.  But we are developers, not lawyers; and this is <em>definitely not legal advice</em>.  Before going live, be sure to replace these example documents with your own company's policies, and <a href="https://en.wikipedia.org/wiki/Counsel" target="_blank">seek counsel</a> for assistance if you need to design new terms from scratch.</small></blockquote>
-      </div>
-      <div class="step">
-        <div class="step-image">
-        <img alt="computer with credit card icon on screen" src="/images/setup-payment.png"/>
-        </div>
-        <h5>Configure integrations</h5>
-        <p>In order for this app to send automated emails, you'll need to create a <a target="_blank" href="https://mailgun.com">Mailgun</a> account.  Then, in <code>config/custom.js</code>, configure the following:</p>
-        <div class="card bg-light mb-4">
-          <div class="card-body"><pre><code><span class="text-muted">// Recipient of contact form messages</span>
-internalEmailAddress: my.email@example.com,
+<h3 class="text-center featureH">Targeting your customers</h3>
+<div class="container">
+<div class="step">
+<div class="row">
+<div class="col-sm-4">
+<i class="glyphicon glyphicon-globe"></i>
+<h5>Target Customers</h5>
+<p>Target your users based on their location and device and redirect them to specialized pages to increase your conversion.</p>
+</div>
+<div class="col-sm-4">
+<i class="glyphicon glyphicon-star"></i>
+<h5>Custom Landing Page</h5>
+<p>Create a custom landing page to promote your product or service on forefront and engage the user in your marketing campaign.</p>
+</div>
+<div class="col-sm-4">
+<i class="glyphicon glyphicon-asterisk"></i>
+<h5>Overlays</h5>
+<p>Use our overlay tool to display unobtrusive notifications on the target website. A perfect way to send a message to your customers or run a promotion campaign.</p>
+</div>
+</div>
+<br>
+<div class="row">
+<div class="col-sm-4">
+<i class="glyphicon glyphicon-th"></i>
+<h5>Event Tracking</h5>
+<p>Add your custom pixel from providers such as Facebook and track events right when they are happening.</p>
+</div>
+<div class="col-sm-4">
+<i class="glyphicon glyphicon-glass"></i>
+<h5>Premium Aliases</h5>
+<p>As a premium membership, you will be able to choose a premium alias for your links from our list of reserved aliases.</p>
+</div>
+<div class="col-sm-4">
+<i class="glyphicon glyphicon-cloud"></i>
+<h5>Robust API</h5>
+<p>Use our powerful API to build custom applications or extend your own application with our powerful tools.</p>
+</div>
+</div>
+</div>
+</div>
 
-<span class="text-muted">// For outgoing emails</span>
-fromEmailAddress: 'noreply@example.com',
-fromName: 'The NEW_APP_NAME Team',
+</div>
+</section>
 
-<span class="text-muted">// Mailgun settings</span>
-mailgunDomain: 'transactional-mail.example.com',
-mailgunSecret: 'key-testkeyb183848139913858e8abd9a3'</code></pre>
-          </div>
-        </div>
-        <p>To enable support for billing features, you'll need to make a <a target="_blank" href="https://stripe.com">Stripe</a> account, then include your test credentials like so:</p>
-        <div class="card bg-light mb-4">
-          <div class="card-body"><pre><code><span class="text-muted">// Stripe credentials</span>
-stripePublishableKey: 'pk_test_Zzd814nldl91104qor5911gjald',
-stripeSecret: 'sk_test_Zzd814nldl91104qor5911gjald'</code></pre>
-          </div>
-        </div>
-        <blockquote><small>If your app doesn't need payment processing, it will still work without Stripe configuration. In this case, all references to billing will just be omitted from the UI.</small></blockquote>
-      </div>
-      <div class="step">
-        <div class="step-image">
-        <img alt="computer with sails logo on screen" src="/images/setup-customize.png"/>
-        </div>
-        <h5>Customize</h5>
-        <p>Once the initial configuration is done, you're ready to start building out the rest of your app.</p>
-        <p>We worked hard to make this starter app's structure consistent and its files are as bare-bones as possible, so it's easy to add new pages and business logic following the conventions we set up. If you run into trouble, have a look at <a href="/faq">your new FAQ page</a>, which covers the tools we used and how to customize.  For a deeper dive, check out the Sails <a href="https://courses.platzi.com/courses/sails-js/">walkthrough</a>, <a href="https://sailsjs.com/documentation">reference documentation</a> and <a href="https://sailsjs.com/support">support</a> pages.</p>
-      </div>
+
+
+
+
+
+  <section class="how-to"> 
+  <div class="container">
+    <div class="">
+      <h3 class="text-center headline">How to get started:</h3>
+
+<div class="row feature">
+<div class="col-sm-7 image">
+<div class="row">
+<div class="col-md-6">
+<div class="panelette">
+<h3>
+<i class="fa fa-paper-plane"></i>
+Target. Re-target. </h3>
+<p>
+Target your customers to increase your reach and redirect them to a relevant page. Add a pixel to retarget them in your social media ad campaign to capture them. </p>
+</div>
+</div>
+<div class="col-md-6">
+<div class="panelette panelette-grad">
+<h3>
+<i class="fa fa-paper-plane"></i>
+Measure. Optimize. </h3>
+<p>
+Share your links to your network and measure data to optimize your marketing campaign's performance. Reach an audience that fits your needs. </p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-5 info">
+<h2>
+<i class="fa fa-paper-plane"></i>
+<small>Reach &amp; increase sales.</small>
+Perfect for sales &amp; marketing </h2>
+<p>
+Understanding your users and customers will help you increase your conversion. Our system allows you to track everything. Whether it is the amount of clicks, the country or the referrer, the data is there for you to analyze it. </p>
+</div>
+<div class="m-auto">
+<p class="text-center mt-5">
+<a href="https://gempixel.com/short/user/register" class="btn btn-secondary btn-lg btn-round">Get started for free</a>
+</p>
+</div>
+
+</p>
+
     </div>
+  </div>
+</section>
+
     <hr/>
+
+  <div class="container">
+
     <div class="pep-talk text-center">
-      <h3>Let's get to work.</h3>
-      <p>We think this project is a pretty convenient starting point, but of course there's no one-size-fits-all solution. The good news is, this app is in your hands now, so you can jump into the files and adapt it to your needs. Change some code around. Break stuff.  Fix it. And above all: <strong>make something people want to use</strong>.</p>
-      <p><span class="text-muted">&hearts;</span> <a href="https://sailsjs.com/about">The Sails Team</a></p>
+      <h3>One short link, infinite possibilities.</h3>
+      <p>A short link is a powerful marketing tool when you use it carefully. It is not just a link but a medium between your customer and their destination. A short link allows you to collect so much data about your customers and their behaviors. <strong>make something people want to use</strong>.</p>
+      <p><span class="text-muted">&hearts;</span> <a href="#">Short Url</a></p>
     </div>
   </div>
 </div>
